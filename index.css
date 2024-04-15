@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    text-decoration: none;
+}
+
+header,
+main,
+section,
+aside,
+footer {
+    padding: clamp(1.875rem, 1.193rem + 3.41vw, 3.75rem) 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1280px;
+}
+
+.n-main {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+
+    a {
+        color: #000;
+    }
+}
+
+.logo {
+    width: 162px;
+}
+
+.lang {
+    width: 67px;
+
+}
+
+@media (max-width: 1000px) {
+    .links {
+        display: none;
+    }
+
+    .lang {
+        order: -1;
+    }
+}
+
+.h-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.h-left {
+    h4 {
+        font-weight: 600;
+        font-size: 14px;
+        color: #E75B60;
+        padding-bottom: 15px;
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 34px;
+        color: #000;
+        padding-bottom: 60px;
+    }
+
+    p {
+        color: #7c7e80;
+        font-weight: 400;
+        font-size: 14px;
+        padding-bottom: 60px;
+    }
+
+    .triple {
+        display: flex;
+        gap: 23px;
+        align-items: center;
+
+        button {
+            width: 164px;
+            height: 50px;
+            border: none;
+            background-color: #9A51D3;
+            border-radius: 35px;
+            font-size: 16px;
+            font-weight: 400;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        sub {
+            font-size: 14px;
+            font-weight: 400;
+            color: #7c7e80;
+        }
+    }
+
+}
+
+.down {
+    text-align: center;
+    display: block;
+    padding: 30px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.benefits {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: clamp(1.875rem, 1.193rem + 3.41vw, 3.75rem) 0;
+
+    .box {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+}
+
+.s-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    img {
+        width: 100%;
+        cursor: pointer;
+        transform: all .5;
+
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.title {
+    font-size: 30px;
+    height: 600;
+    padding-bottom: 30px;
+
+    span {
+        border-bottom: 3px solid #9A51D3;
+    }
+}
+
+.contact {
+    width: 100%;
+    height: 520px;
+    background: url(imeges/contact.jpg) no-repeat center center/cover;
+    border-radius: 20px;
+    margin: clamp(1.875rem, 1.193rem + 3.41vw, 3.75rem) 0;
+    ;
+}
+
+main {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: repeat(4, 1fr);
+
+    .card {
+        width: 100%;
+        text-align: center;
+
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        p {
+            padding-top: 30px;
+        }
+    }
+
+}
+.a-main {
+    text-align: center;
+    align-items: center;
+}
+p {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+.a-right img {
+    width: 100%;
+}
+h3 {
+    font-weight: 600;
+    font-size: 20px;
+}
+.a-center
+button {
+    width: 185px;
+    height: 48px;
+    background-color: #9A51D3;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+}
+.a-main {
+    text-align: center;
+    align-items: center;
+}
+.pupils {
+    width: 100%;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 95%;
+}
+.title {
+    font-size: 30px;
+    height: 600;
+    padding-bottom: 30px;
+}
+
+
+@media (max-width: 1128px) {
+    .h-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+    .h-left{
+        text-align: center;
+        .triple{
+            flex-direction: column;
+        }
+    }
+    .benefits{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 936px) {
+    .s-main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .s-main{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
+@media (max-width: 832px) {
+    main {
+        display: grid;
+        gap: 60px;
+        grid-template-columns: repeat(5, 1fr);
+    
+        .card {
+            width: 100%;
+            text-align: center;
+    
+            img {
+                width: 100%;
+                border-radius: 50%;
+            }
+    
+            p {
+                padding-top: 30px;
+            }
+        }
+    
+    } 
+}
+@media (max-width: 710px) {
+    main {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(4, 1fr);
+    
+        .card {
+            width: 100%;
+            text-align: center;
+    
+            img {
+                width: 100%;
+                border-radius: 50%;
+            }
+    
+            p {
+                padding-top: 30px;
+            }
+        }
+    
+    } 
+}
+@media (max-width: 666px) {
+    main {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(3, 1fr);
+    
+        .card {
+            width: 100%;
+            text-align: center;
+    
+            img {
+                width: 100%;
+                border-radius: 50%;
+            }
+    
+            p {
+                padding-top: 30px;
+            }
+        }
+    
+    } 
+}
+@media (max-width: 528px) {
+    main {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    
+        .card {
+            width: 100%;
+            text-align: center;
+    
+            img {
+                width: 100%;
+                border-radius: 50%;
+            }
+    
+            p {
+                padding-top: 30px;
+            }
+        }
+    
+    } 
+}
+@media (max-width: 520px) {
+    main {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    
+        .card {
+            width: 100%;
+            text-align: center;
+    
+            img {
+                width: 100%;
+                border-radius: 50%;
+            }
+    
+            p {
+                padding-top: 30px;
+            }
+        }
+    
+    } 
+}
+@media (max-width: 834px) {
+    
+}
